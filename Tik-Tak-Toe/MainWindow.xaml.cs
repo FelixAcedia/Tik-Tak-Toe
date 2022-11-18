@@ -24,7 +24,6 @@ namespace Tik_Tak_Toe
     /// </summary>
     public partial class MainWindow : Window
     {
-        public bool winner = false;
         private bool player = true;
         public bool Player
         {
@@ -66,8 +65,6 @@ namespace Tik_Tak_Toe
 
         private void Grid_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            if (winner)
-                Clear();
             int total = 0;
             MenuStPlayer.IsEnabled = false;
             if (e.GetPosition(field).Y < field.Height / 3)
@@ -133,7 +130,7 @@ namespace Tik_Tak_Toe
                 if(WinMessage)
                     MessageBox.Show(Player ? "PlayerX hat Gewonnen!" : "PlayerO hat Gewonnen!",
                     "Gewonnen!");
-                winner = true;
+                Clear();
             }
             Player = !Player;
         }
@@ -143,7 +140,6 @@ namespace Tik_Tak_Toe
             playerOsum = new int[9];
             x = 0;
             MenuStPlayer.IsEnabled = true;
-            winner = false;
             myCanva.Children.Clear();
         }
         private bool WinConditions(int[] sum)

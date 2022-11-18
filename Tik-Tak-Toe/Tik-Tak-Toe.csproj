@@ -8,4 +8,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Rastergrafik %281%29.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Rastergrafik (1).ico" />
+  </ItemGroup>
+
 </Project>

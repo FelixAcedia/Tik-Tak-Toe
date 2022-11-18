@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tik_Tak_Toe"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" MinHeight="450" Width="450" MinWidth="450" ResizeMode="CanResizeWithGrip" SizeChanged="Window_SizeChanged">
+        Title="MainWindow" Height="450" MinHeight="450" Width="450" MinWidth="450" ResizeMode="CanResizeWithGrip" SizeChanged="Window_SizeChanged" Icon="/Rastergrafik (1).ico">
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="_Settings">
